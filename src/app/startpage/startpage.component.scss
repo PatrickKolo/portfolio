@@ -30,6 +30,8 @@
 
     .hero-pic {
         height: 70vh;
+
+        
     }
 }
 
@@ -37,7 +39,7 @@
 .aboutme-slope {
     width: 100%;
     position: absolute;
-    top: calc(100vh - 400px);
+    top: calc(100vh - 420px);
     z-index: 2;
 }
 
@@ -220,7 +222,7 @@
 
 .shadow-container {
     position: absolute;
-    top: 50px;
+    top: 85px;
     left: -360px;
     user-select: none;
     z-index: 0;
