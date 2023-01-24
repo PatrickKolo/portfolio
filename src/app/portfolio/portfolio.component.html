@@ -1,1 +1,47 @@
-<p>portfolio works!</p>
+<div class="portfolio-title-head">
+    <div class="line short"></div>
+    <span>Portfolio</span>
+    <div class="line long"></div>
+</div>
+
+<div class="portfolio-title-text">
+    <p>This page is a sample of my work - please feel free to try them out</p>
+</div>
+
+<div class="project-area">
+    <div class="project" *ngFor="let projectname of projectnames; let i = index">
+        <ng-template [ngIf]="i % 2 == 0" [ngIfElse]="odd" class="column">
+            <img [ngStyle]="{'margin-right': '150px'}" src="./assets/img/projects/{{ projectimages[i] }}">
+            <div [ngStyle]="{'align-items': 'flex-start'}" class="project-details">
+                <span
+                    [ngStyle]="{'font-size': '32px', 'color': '#4B47FF', 'font-weight': '700', 'margin-bottom': '30px'}">{{
+                    projectnames[i] }}</span>
+                <span [ngStyle]="{'font-size': '23px', 'color': '#00BEE8', 'margin-bottom': '20px'}">{{ methods[i]
+                    }}</span>
+                <span [ngStyle]="{'margin-bottom': '20px'}">{{ descriptions[i] }}</span>
+                <div>
+                    <button mat-raised-button class="btn live">Live test</button>
+                    <button mat-raised-button class="btn git">Github</button>
+                </div>
+            </div>
+        </ng-template>
+
+        <ng-template #odd>
+            <div class="column-reverse">
+                <div [ngStyle]="{'align-items': 'flex-end'}" class="project-details">
+                    <span
+                        [ngStyle]="{'font-size': '32px', 'color': '#4B47FF', 'font-weight': '700', 'margin-bottom': '30px'}">{{
+                        projectnames[i] }}</span>
+                    <span [ngStyle]="{'font-size': '23px', 'color': '#00BEE8', 'margin-bottom': '20px'}">{{ methods[i]
+                        }}</span>
+                    <span class="description-reverse">{{ descriptions[i] }}</span>
+                    <div>
+                        <button mat-raised-button class="btn live">Live test</button>
+                        <button mat-raised-button class="btn git">Github</button>
+                    </div>
+                </div>
+                <img [ngStyle]="{'margin-left': '150px'}" src="./assets/img/projects/{{ projectimages[i] }}">
+            </div>
+        </ng-template>
+    </div>
+</div>
