@@ -1,48 +1,118 @@
 .myskill-area {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    margin-left: 25px;
+    margin-bottom: 150px;
+    z-index: 1;
 }
 
 .myskill-area-left {
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
-    text-align: center;
-    
 
-    .skill{
-        padding-left: 70px;
-        padding-right: 70px;
-        padding-top: 50px;
+
+    .skill {
+        width: 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 75px;
+        margin-right: 75px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+        img {
+            margin-bottom: 5px;
+        }
+
+        .bounce {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
+
+            &:hover {
+                animation-name: bounce;
+                -moz-animation-name: bounce;
+            }
+        }
+
+        p {
+            height: 25px;
+        }
     }
 }
 
 .myskill-area-right {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    .myskill-head {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding-bottom: 50px;
+        width: 100%;
+
+
+        span {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 90px;
+            line-height: 120%;
+        }
+    }
+}
+
+
+.line {
+    border: 2px solid #9747FF;
+    height: 1px;
+    width: 75px;
+    background-color: #9747FF;
+    border-radius: 10px;
+    margin-left: 25px;
+
+    @media screen and (max-width:1024px) {
+        right: -320px;
+    }
+
+    @media screen and (max-width:350px) {
+        width: 50px;
+    }
+}
+
+.myskill-text {
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    flex-direction: column;
+    text-align: right;
+    margin-left: 100px;
 
-    .myskill-title {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 90px;
-        line-height: 120%;
+    @media screen and (max-width:720px) {
+        margin-left: 25px
     }
 
     p {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 120%;
-        text-align: left;
+        text-align: right;
+        margin-right: 100px;
+        margin-bottom: 50px;
     }
+
 }
 
 .btn-touch {
@@ -51,6 +121,7 @@
     background: #00BEE8;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    cursor: pointer;
 
     color: white;
     font-family: 'Poppins';
@@ -77,7 +148,7 @@
     }
 }
 
-.green-shadow {
+.skill-shadow {
     position: relative;
     transform: scaleY(-1);
     left: -60%;
@@ -89,5 +160,31 @@
 
     @media screen and (max-width:700px) {
         left: -600px;
+    }
+}
+
+
+@keyframes bounce {
+
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0)
+    }
+
+    40% {
+        -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        transform: translateY(-30px)
+    }
+
+    60% {
+        -webkit-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        transform: translateY(-15px)
     }
 }
