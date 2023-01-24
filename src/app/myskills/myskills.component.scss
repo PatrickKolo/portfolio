@@ -1,0 +1,93 @@
+.myskill-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.myskill-area-left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+    
+
+    .skill{
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-top: 50px;
+    }
+}
+
+.myskill-area-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .myskill-title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 120%;
+    }
+
+    p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        text-align: left;
+    }
+}
+
+.btn-touch {
+    width: 165px;
+    height: 58px;
+    background: #00BEE8;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    border-inline: unset;
+}
+
+
+.shadow-container {
+    position: absolute;
+    top: 2050px;
+    overflow: hidden;
+    user-select: none;
+
+    @media screen and (max-width:1300px) {
+        top: 2150px;
+    }
+
+    @media screen and (max-width:1024px) {
+        width: 100%;
+    }
+}
+
+.green-shadow {
+    position: relative;
+    transform: scaleY(-1);
+    left: -60%;
+    overflow: hidden;
+
+    @media screen and (max-width:1024px) {
+        left: -500px;
+    }
+
+    @media screen and (max-width:700px) {
+        left: -600px;
+    }
+}

@@ -1,13 +1,34 @@
-.header-container{
+.header-container {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    background-color: #141d2f;
+    height: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
-    padding-left: 50px;
-    padding-right: 50px;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 200px;
+
+    img{
+        width: 100px;
+    }
 }
 
-.header-menu{
-    a{
-    padding-left: 8px;
-}
+.header-menu {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+
+    a {
+        padding-left: 12px;
+        padding-right: 12px;
+        color: white;
+        text-decoration: none;
+        &:hover{
+            color: #1CDAE6
+        }
+    }
 }
