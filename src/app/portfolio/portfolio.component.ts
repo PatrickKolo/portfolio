@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  public projectnames: string[] = ['Join', 'El Pollo Loco', 'Rong of fire', 'Pokedex'];
-  public projectimages: string[] = ['join.png', 'loco-placeholder.png', 'pokédex-placeholder.png', 'simple-CRM-placeholder.png'];
+  public projectnames: string[] = ['Join', 'El Pollo Loco', 'Simple CRM', 'Pokedex'];
+  public projectimages: string[] = ['join.png', 'loco-placeholder.png', 'simple-crm.png','pokedex.png'];
   public methods: string[] = ['HTML | CSS | JavaScript', 'HTML | CSS | JavaScript', 'Angular | Firebase', 'HTML | CSS | JavaScript | API'];
   public descriptions: string[] = ['Task manager inspired by the Kanban System. Create and organize tasks using drag and drop function, assign users and categories',
 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to collect coins and salsa bottles to defeat a giant chicken', 
