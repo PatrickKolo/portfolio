@@ -1,8 +1,75 @@
-<div class="header-container">
-    <img src="./assets/img/logo-pk2.png" alt="">
-    <div class="header-menu">
-        <a href="#">About me</a>
-        <a href="#">Skills</a>
-        <a href="#">Portfolio</a>
+<div class="header">
+    <div class="head-container" *ngIf="dialogClosed">
+        <a href="#"><img class="logo" src="./assets/img/logo-pk2.png" (click)="setLinksToFalse()"></a>
+
+        <div class="link-container">
+            <div>
+                <a [ngStyle]="{'margin-right': '50px'}" [ngClass]="{'green': aboutHeadClicked}"
+                    (click)="scroll('aboutme')" (click)="(setUnderline('about-head'))">About me</a>
+                <div [ngClass]="{'underline': aboutHeadClicked}"></div>
+            </div>
+            <div>
+                <a [ngStyle]="{'margin-right': '50px'}" [ngClass]="{'green': skillClicked}" (click)="scroll('skills')"
+                    (click)="(setUnderline('skill-head'))">Skills</a>
+                <div [ngClass]="{'underline': skillClicked}"></div>
+            </div>
+
+            <div>
+                <a [ngClass]="{'green': portfolioClicked}" (click)="scroll('portfolio')"
+                    (click)="(setUnderline('pf-head'))">Portfolio</a>
+                <div [ngClass]="{'underline': portfolioClicked}"></div>
+            </div>
+        </div>
+
+        <img class="menu" src="./assets/img/icons/burger-menu.png" (click)="openDialog()">
     </div>
+
+    <div class="head-display" id="display" *ngIf="!dialogClosed">
+        <div class="display-logo">
+            <a href="#"><img class="logo" src="./assets/img/logo-pk2.png" (click)="setLinksToFalse()"></a>
+            <img class="menu" src="./assets/img/icons/burger-close.png" (click)="closeDialog()">
+        </div>
+
+        <div class="display-link">
+            <div>
+                <a   
+                    [ngClass]="{'green': aboutHeadClicked}"
+                    (click)="scroll('aboutme')" 
+                    (click)="(setUnderline('about-head'))">
+                    About me
+                </a>
+                <div [ngClass]="{'underline': aboutHeadClicked}"></div>
+            </div>
+
+            <div>
+                <a   
+                    [ngClass]="{'green': skillClicked}" 
+                    (click)="scroll('skills')"
+                    (click)="(setUnderline('skill-head'))">
+                    Skills
+                </a>
+                <div [ngClass]="{'underline': skillClicked}"></div>
+            </div>
+
+            <div>
+                <a  [ngClass]="{'green': portfolioClicked}" 
+                    (click)="scroll('portfolio')"
+                    (click)="(setUnderline('pf-head'))">
+                    Portfolio
+                </a>
+                <div [ngClass]="{'underline': portfolioClicked}"></div>
+            </div>
+
+            <div>
+                <a  [ngClass]="{'green': contactClicked}" 
+                    (click)="scroll('contact')"
+                    (click)="(setUnderline('contact-head'))">
+                    Contact
+                </a>
+                <div [ngClass]="{'underline': contactClicked}"></div>
+            </div>
+
+        </div>
+    </div>
+
 </div>

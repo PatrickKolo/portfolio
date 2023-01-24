@@ -23,12 +23,12 @@
                     placeholder="Your name" #nameField>
 
                 <div *ngIf="!fullname?.valid && fullname?.touched">
-                    <img class="image-position" src="./assets/img/icons_desktop/alert.png"
+                    <img class="image-position" src="./assets/img/icons/red-alert.png"
                         [hidden]="!fullname?.errors?.['valid'] && fullname?.errors?.['touched']">
                 </div>
 
                 <div *ngIf="fullname?.valid && fullname?.touched">
-                    <img class="image-position" src="./assets/img/icons_desktop/success.png"
+                    <img class="image-position" src="./assets/img/icons/green-check.png"
                         [hidden]="fullname?.errors?.['valid'] && fullname?.errors?.['touched']">
                 </div>
             </div>
@@ -46,12 +46,12 @@
                     placeholder="Your email" #emailField>
 
                 <div *ngIf="!email?.valid && email?.touched">
-                    <img class="image-position" src="./assets/img/icons_desktop/alert.png"
+                    <img class="image-position" src="./assets/img/icons/red-alert.png"
                         [hidden]="!email?.errors?.['valid'] && email?.errors?.['touched']">
                 </div>
 
                 <div *ngIf="email?.valid && email?.touched">
-                    <img class="image-position" src="./assets/img/icons_desktop/success.png"
+                    <img class="image-position" src="./assets/img/icons/green-check.png"
                         [hidden]="email?.errors?.['valid'] && email?.errors?.['touched']">
                 </div>
             </div>
@@ -74,12 +74,12 @@
                         placeholder="Your message" #messageField></textarea>
 
                     <div *ngIf="!message?.valid && message?.touched">
-                        <img class="image-position" src="./assets/img/icons_desktop/alert.png"
+                        <img class="image-position" src="./assets/img/icons/red-alert.png"
                             [hidden]="!message?.errors?.['valid'] && message?.errors?.['touched']">
                     </div>
 
                     <div *ngIf="message?.valid && message?.touched">
-                        <img class="image-position" src="./assets/img/icons_desktop/success.png"
+                        <img class="image-position" src="./assets/img/icons/green-check.png"
                             [hidden]="message?.errors?.['valid'] && message?.errors?.['touched']">
                     </div>
                 </div>

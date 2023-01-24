@@ -130,6 +130,11 @@
     font-size: 23px;
     line-height: 120%;
     border-inline: unset;
+
+    &:hover{
+        transform: scale(1.2);
+        background: #4B47FF;
+    }
 }
 
 

@@ -15,12 +15,14 @@
     position: relative;
     right: -55%;
     overflow: hidden;
+    z-index: 2;
 }
 
 .aboutme-container {
     display: flex;
     margin-left: 100px;
     margin-bottom: 150px;
+   
 
     @media screen and (max-width:1300px) {
         margin-bottom: 100px;
@@ -42,7 +44,7 @@
     }
 
     .aboutme-text {
-        z-index: 1;
+        z-index: 3;
         width: 50%;
 
         @media screen and (max-width:1024px) {
@@ -92,7 +94,7 @@
 
 
 .aboutme-picture {
-    z-index: 1;
+    z-index: 5;
     width: 50%;
     display: flex;
     justify-content: center;
