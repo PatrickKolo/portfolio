@@ -24,11 +24,11 @@
         margin-left: 60px;
     }
 
-    @media screen and (max-width:1024px){
+    @media screen and (max-width:1024px) {
         margin-left: 0px;
     }
 
-    @media screen and (max-width:850px){
+    @media screen and (max-width:850px) {
         margin-left: -50px;
     }
 
@@ -38,12 +38,12 @@
         margin-left: -120px;
     }
 
-    
-    @media screen and (max-width:600px){
+
+    @media screen and (max-width:600px) {
         margin-left: -240px;
     }
 
-    @media screen and (max-width:400px){
+    @media screen and (max-width:400px) {
         flex-direction: column;
         margin-left: -160px;
     }
@@ -59,9 +59,19 @@
     position: relative;
     z-index: 1;
 
-    @media screen and (max-width:400px){
-        padding-top: 100px;
+    @media screen and (max-width:420px) {
+        padding-top: 0px !important;
     }
+
+    @media screen and (max-width:375px) {
+        padding-top: 80px;
+    }
+
+    @media screen and (max-height:1024px) {
+      //  right: 200px;
+
+    }
+
 
     .hero-shadow {
         position: absolute;
@@ -73,9 +83,20 @@
     .hero-pic {
         height: 70vh;
 
-        @media screen and (max-width:400px){
-            height: 55vh;
+        @media screen and (max-width:450px) {
+            height: 62vh;
+            padding-left: 10px;
+
         }
+
+        @media screen and (max-width:375px) {
+            height: 55vh;
+            padding-left: 140px;
+
+        }
+
+
+
 
 
     }
@@ -85,38 +106,39 @@
 .aboutme-slope {
     width: 100%;
     position: absolute;
-    top: calc(100vh - 420px);
+    top: calc(100vh - 450px);
     z-index: 2;
 
     @media screen and (max-width:1500px) {
-        top: calc(100vh - 400px);
+        top: calc(100vh - 430px);
     }
 
     @media screen and (max-width:1300px) {
-        top: calc(100vh - 390px);
+        top: calc(100vh - 420px);
     }
 
     @media screen and (max-width:1024px) and (orientation: portrait) {
-        top: calc(100vh - 350px);
+        top: calc(100vh - 400px);
     }
 
     @media screen and (max-width:850px) and (orientation: portrait) {
-        top: calc(100vh - 320px);
+        top: calc(100vh - 390px);
     }
 
 
 
-    @media screen and (max-width:760px) {
-        top: calc(100vh - 310px);
-    }
+    // @media screen and (max-width:760px) {
+    //     top: calc(100vh - 310px);
+    // }
 
     @media screen and (max-width:600px) and (orientation: portrait) {
-        bottom: 3vh !important;
+        bottom: 4vh !important;
         top: unset !important;
+        width: 108%;
     }
 
     @media screen and (max-width:400px) and (orientation: portrait) {
-        bottom: 5vh !important;
+        bottom: 10vh !important;
         width: 108%;
     }
 
@@ -153,16 +175,30 @@
     align-items: center;
 }
 
-.hero-right-container{
+.hero-right-container {
     z-index: 3;
 
-    @media screen and (max-width:600px){
+    @media screen and (max-width:1390px) {
         position: absolute;
         top: 71%;
         left: 20%;
     }
 
- 
+
+
+    @media screen and (max-width:600px) {
+        position: absolute;
+        top: 68%;
+        left: 12%;
+    }
+
+    @media screen and (max-width:500px) {
+        position: absolute;
+        top: 72%;
+        left: 12%;
+    }
+
+
 
 }
 
@@ -193,9 +229,13 @@
         font-size: 40px !important;
     }
 
-    
+
     @media screen and (max-width:1600px) {
         font-size: 32px !important;
+    }
+
+    @media screen and (max-width:1024px) {
+        font-size: 23px !important;
     }
 
 
@@ -221,11 +261,11 @@
 
 
     @media screen and (max-width:1024px) {
-        font-size: clamp(30px, 5.5vw, 90px);
+        font-size: 33px !important;
     }
 
     @media screen and (max-width:720px) {
-        font-size: clamp(30px, 7.5vw, 90px);
+        font-size: 29px !important;
     }
 }
 
@@ -248,11 +288,11 @@
 
 
     @media screen and (max-width:1024px) {
-        font-size: clamp(22px, 4.0vw, 58px);
+        font-size: 28px !important;
     }
 
     @media screen and (max-width:720px) {
-        font-size: clamp(22px, 5.5vw, 58px);
+        font-size: 23px !important;
     }
 }
 
@@ -278,6 +318,14 @@
         transform: scale(1.2);
         background: #4B47FF;
     }
+
+    @media screen and (max-width:1200px) {
+        width: 130px;
+        height: 46px;
+        font-size: 20px;
+    }
+
+
 }
 
 
@@ -398,6 +446,17 @@
 
     @media screen and (max-width:1024px) {
         width: 100%;
+        top: 35px;
+    }
+
+    @media screen and (max-width:620px) {
+        width: 100%;
+        top: -10px;
+    }
+
+    @media screen and (max-width:450px) {
+        top: 40px;
+        left: -327px;
     }
 }
 
@@ -406,7 +465,14 @@
     position: relative;
     right: -55%;
     overflow: hidden;
+
+    @media screen and (max-width:500px) {
+        height: 74vh;
+        right: -210px;
+    }
+
     @media screen and (max-width:400px) {
-        width: 580px;
+        height: 74vh;
+        right: -67px;
     }
 }

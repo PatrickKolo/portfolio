@@ -21,6 +21,7 @@
 .aboutme-container {
     display: flex;
     margin-left: 100px;
+    margin-right: 100px;
     margin-bottom: 150px;
    
 
@@ -48,7 +49,7 @@
         width: 50%;
 
         @media screen and (max-width:1024px) {
-            width: 100%;
+            width: 90%;
         }
 
         h1 {
@@ -57,7 +58,7 @@
             margin-bottom: 50px;
 
             @media screen and (max-width:500px) {
-                font-size: 82px;
+                font-size: 65px;
             }
 
             @media screen and (max-width:400px) {

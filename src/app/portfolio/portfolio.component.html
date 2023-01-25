@@ -19,9 +19,9 @@
                 <span [ngStyle]="{'font-size': '23px', 'color': '#00BEE8', 'margin-bottom': '20px'}">{{ methods[i]
                     }}</span>
                 <span [ngStyle]="{'margin-bottom': '20px'}">{{ descriptions[i] }}</span>
-                <div>
+                <div class="button-area">
                     <button mat-raised-button class="btn live">Live test</button>
-                    <button mat-raised-button class="btn git">Github</button>
+                    <button mat-raised-button class="btn git" (click)="visitProject(github[i])">Github</button>
                 </div>
             </div>
         </ng-template>
@@ -35,9 +35,9 @@
                     <span [ngStyle]="{'font-size': '23px', 'color': '#00BEE8', 'margin-bottom': '20px'}">{{ methods[i]
                         }}</span>
                     <span class="description-reverse">{{ descriptions[i] }}</span>
-                    <div>
+                    <div class="button-area">
                         <button mat-raised-button class="btn live">Live test</button>
-                        <button mat-raised-button class="btn git">Github</button>
+                        <button mat-raised-button class="btn git" (click)="visitProject(github[i])">Github</button>
                     </div>
                 </div>
                 <img [ngStyle]="{'margin-left': '150px'}" src="./assets/img/projects/{{ projectimages[i] }}">

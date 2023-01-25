@@ -7,6 +7,24 @@
     margin-top: 200px;
     margin-bottom: 250px;
     z-index: 1;
+
+
+    @media screen and (max-width:1400px) {
+        margin-top: 150px;
+    }
+
+    @media screen and (max-width:1024px) {
+        flex-direction: column-reverse;
+        margin-left: 100px;
+    }
+
+    @media screen and (max-width:768px) {
+        margin-left: unset;
+    }
+
+    @media screen and (max-width: 914px) and (max-height: 768px) and (orientation: landscape) {
+        margin-left: unset;
+    }
 }
 
 .myskill-area-left {
@@ -15,6 +33,23 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
+
+    @media screen and (max-width:1400px) {
+        width: 77%;
+    }
+
+    @media screen and (max-width:1024px) {
+        width: 90%;
+    }
+
+    @media screen and (max-width:720px) and (orientation: portrait) {
+        justify-content: space-evenly;
+    }
+
+    @media screen and (max-width: 914px) and (max-height: 768px) and (orientation: landscape) {
+        justify-content: space-evenly;
+    }
 
 
     .skill {
@@ -52,6 +87,18 @@
         p {
             height: 25px;
         }
+
+
+        @media screen and (max-width:450px) {
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        @media screen and (max-width: 914px) and (max-height: 768px) and (orientation: landscape) {
+            width: 50px;
+            margin-right: 60px;
+            margin-left: 60px;
+        }
     }
 }
 
@@ -59,6 +106,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (max-width:1024px) {
+        width: 100%;
+    }
 
     .myskill-head {
         display: flex;
@@ -74,6 +125,22 @@
             font-weight: 700;
             font-size: 90px;
             line-height: 120%;
+
+            @media screen and (max-width:1450px) {
+                font-size: 75px;
+            }
+
+            @media screen and (max-width:500px) {
+                font-size: 67px;
+            }
+
+            @media screen and (max-width:400px) {
+                font-size: 52px;
+            }
+
+            @media screen and (max-width:350px) {
+                font-size: 50px;
+            }
         }
     }
 }
@@ -132,10 +199,18 @@
     line-height: 120%;
     border-inline: unset;
 
-    &:hover{
+    &:hover {
         transform: scale(1.2);
         background: #4B47FF;
     }
+
+    @media screen and (max-width:1024px) {
+        width: 159px;
+        height: 47px;
+        font-size: 16px;
+    }
+
+
 }
 
 

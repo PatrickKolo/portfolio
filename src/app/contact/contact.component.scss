@@ -9,11 +9,11 @@
     span {
 
         @media screen and (max-width:500px) {
-            font-size: 80px !important;
+            font-size: 70px !important;
         }
 
         @media screen and (max-width:400px) {
-            font-size: 70px !important;
+            font-size: 62px !important;
         }
 
         @media screen and (max-width:350px) {
@@ -50,8 +50,8 @@
     }
 
     @media screen and (max-width:720px) {
-        margin-right: 25px;
-        margin-left: 25px
+        margin-right: 45px;
+        margin-left: 45px
     }
 
     .contact-text {
@@ -87,6 +87,12 @@
 
         @media screen and (max-width:1200px) {
             padding-left: unset;
+        }
+
+        
+        @media screen and (max-width:400px) {
+            margin-right: 45px;
+            margin-left: 45px;
         }
 
         .message-area {
@@ -132,7 +138,7 @@
     }
 
     @media screen and (max-width:720px) {
-        width: calc(100vw - 50px);
+        width: calc(100vw - 90px);
     }
 }
 
