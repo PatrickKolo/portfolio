@@ -20,7 +20,7 @@
                     }}</span>
                 <span [ngStyle]="{'margin-bottom': '20px'}">{{ descriptions[i] }}</span>
                 <div class="button-area">
-                    <button mat-raised-button class="btn live">Live test</button>
+                    <button mat-raised-button class="btn live" (click)="visitProject(livetests[i])">Live test</button>
                     <button mat-raised-button class="btn git" (click)="visitProject(github[i])">Github</button>
                 </div>
             </div>
@@ -36,7 +36,7 @@
                         }}</span>
                     <span class="description-reverse">{{ descriptions[i] }}</span>
                     <div class="button-area">
-                        <button mat-raised-button class="btn live">Live test</button>
+                        <button mat-raised-button class="btn live" (click)="visitProject(livetests[i])">Live test</button>
                         <button mat-raised-button class="btn git" (click)="visitProject(github[i])">Github</button>
                     </div>
                 </div>
