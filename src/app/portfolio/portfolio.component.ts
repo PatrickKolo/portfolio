@@ -15,7 +15,7 @@ export class PortfolioComponent implements OnInit {
     '[Under construction]A very simple Customer Relationship Management system working with CRUD functionality[Under construction]', 'Based on the PokéAPI, a simple library that provides and catalogues pokemon information',];
   public livetests: string[] = ['https://patrick-kolodziej.developerakademie.net/join/src/index.html', 'http://patrick-kolodziej.developerakademie.net/El%20Pollo%20Loco/index.html',
     '#', 'https://patrick-kolodziej.developerakademie.net/Pokedex/index.html'];
-  public github: string[] = ['https://github.com/PatrickKolo/Join', 'https://github.com/PatrickKolo/El-Pollo-Loco', '#', 'https://github.com/PatrickKolo/ringoffire',];
+  public github: string[] = ['https://github.com/PatrickKolo/Join', 'https://github.com/PatrickKolo/El-Pollo-Loco', 'https://github.com/PatrickKolo/ringoffire', 'https://github.com/PatrickKolo/Pokedex'];
 
 
   constructor() { }
