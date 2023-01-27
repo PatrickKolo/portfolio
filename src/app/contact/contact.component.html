@@ -3,9 +3,10 @@
     <span [ngStyle]="{'font-size': '90px','font-weight': '700'}">Contact</span>
 </div>
 
-<div class="contact-area" >
+<div class="contact-area">
     <div class="contact-text">
-        <span [ngStyle]="{'font-size': '32px','font-weight': '700', 'margin-bottom': '25px'}">Got a problem to solve?</span>
+        <span [ngStyle]="{'font-size': '32px','font-weight': '700', 'margin-bottom': '25px'}">Got a problem to
+            solve?</span>
         <span [ngStyle]="{'margin-bottom': '25px'}"> Contact me through this form, I am interested in hearing you,
             knowing your ideas and contributing to you
             projects with my work.</span>
@@ -13,7 +14,7 @@
     </div>
 
 
-    <div >
+    <div class="form-container">
         <form [formGroup]="contactForm" (ngSubmit)="sendMail()" novalidate #myForm>
             <!--Inputfield for Name -->
             <div [ngStyle]="{'position': 'relative'}">

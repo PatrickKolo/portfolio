@@ -6,8 +6,8 @@
     margin-bottom: 150px;
     z-index: 1;
 
-    span {
 
+    span {
         @media screen and (max-width:500px) {
             font-size: 70px !important;
         }
@@ -21,25 +21,31 @@
         }
     }
 
+
     .line {
         border: 2px solid #4B47FF;
         height: 1px;
         background-color: #4B47FF;
         border-radius: 10px;
-        width: 50px;
+        width: 185px;
         margin-right: 50px;
 
         @media screen and (max-width:450px) {
             margin-right: 5px;
         }
+
+        @media screen and (max-width:600px) {
+            width: 15px;
+        }
     }
 }
+
 
 .contact-area {
     display: flex;
     justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 250px;
+    margin-right: 250px;
     margin-bottom: 100px;
     z-index: 1;
 
@@ -54,11 +60,12 @@
         margin-left: 45px
     }
 
+
     .contact-text {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
-        width: 600px;
+        width: 100%;
         margin-right: 50px;
         z-index: 1;
         line-height: 1.1;
@@ -72,6 +79,7 @@
             width: unset;
         }
     }
+
 
     form {
         position: relative;
@@ -89,17 +97,19 @@
             padding-left: unset;
         }
 
-        
+
         @media screen and (max-width:400px) {
             margin-right: 45px;
             margin-left: 45px;
         }
+
 
         .message-area {
             display: flex;
             align-items: center;
             flex-direction: column;
         }
+
 
         button {
             width: 241px;
@@ -124,6 +134,11 @@
     }
 }
 
+.form-container{
+    width: 100%;
+}
+
+
 .contactform {
     width: 617px;
     background-color: #141D2F;
@@ -142,14 +157,17 @@
     }
 }
 
+
 textarea {
     padding-top: 15px;
 }
+
 
 ::placeholder {
     color: white;
     opacity: 1;
 }
+
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -166,31 +184,35 @@ select:-webkit-autofill:focus select:-webkit-autofill:active {
     -webkit-text-fill-color: white !important;
 }
 
+
 .image-position {
     position: absolute;
     top: 13px;
     right: 15px;
 }
 
+
 .red-border {
     border-color: red;
 }
 
+
 .green-border {
     border-color: #00BEE8;
 }
+
 
 .disabled-btn {
     opacity: 0.5;
     pointer-events: none;
 }
 
+
 .purple-shadow-container {
     position: absolute;
     top: 5000px;
     overflow: hidden;
     user-select: none;
-
 
     @media screen and (max-width:1300px) {
         top: 4500px;
@@ -205,18 +227,18 @@ select:-webkit-autofill:focus select:-webkit-autofill:active {
         top: 5500px;
     }
 
-    @media screen and (max-width: 914px) and (max-height: 768px) and (orientation: landscape){
+    @media screen and (max-width: 914px) and (max-height: 768px) and (orientation: landscape) {
         top: 4900px;
     }
 
 }
+
 
 .purple-shadow {
     position: relative;
     left: -400px;
     overflow: hidden;
     transform: rotate(-92deg);
-    
 
     @media screen and (max-width:750px) {
         left: -550px;
@@ -226,6 +248,7 @@ select:-webkit-autofill:focus select:-webkit-autofill:active {
         left: -550px;
     }
 }
+
 
 .arrow-position {
     display: flex;
@@ -237,36 +260,56 @@ select:-webkit-autofill:focus select:-webkit-autofill:active {
         margin-right: 25px;
     }
 
+
     .arrow-container {
         cursor: pointer;
         width: 50px;
         height: 50px;
-    }
 
+        
     img:nth-child(2) {
         display: none;
     }
+
 
     &:hover img:nth-child(1) {
         display: none;
     }
 
+
     &:hover img:nth-child(2) {
         display: flex;
     }
+    }
 }
+
 
 .success {
     position: absolute;
     display: flex;
     justify-content: center;
     font-size: 32px;
-    text-decoration:underline #70E61C;
+    text-decoration: underline #70E61C;
     animation: fadeIn 10s ease-in-out;
 }
 
+
 @keyframes fadeIn {
-    0% {opacity: 0;};
-    50% {opacity: 1;};
-    100% {opacity: 0;};
+    0% {
+        opacity: 0;
+    }
+
+    ;
+
+    50% {
+        opacity: 1;
+    }
+
+    ;
+
+    100% {
+        opacity: 0;
+    }
+
+    ;
 }

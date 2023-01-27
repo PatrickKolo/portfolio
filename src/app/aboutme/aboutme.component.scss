@@ -15,15 +15,13 @@
     position: relative;
     right: -55%;
     overflow: hidden;
-    z-index: 2;
+    z-index: 0;
 }
 
 .aboutme-container {
     display: flex;
-    margin-left: 100px;
-   // margin-right: 100px;
+    margin-left: 220px;
     margin-bottom: 150px;
-   
 
     @media screen and (max-width:1300px) {
         margin-bottom: 100px;
@@ -44,6 +42,7 @@
         margin-left: 25px
     }
 
+
     .aboutme-text {
         z-index: 3;
         width: 50%;
@@ -51,6 +50,7 @@
         @media screen and (max-width:1024px) {
             width: 90%;
         }
+
 
         h1 {
             font-size: 90px;
@@ -72,16 +72,19 @@
     }
 }
 
+
 .text {
     display: flex;
     margin-bottom: 40px;
 }
+
 
 .container-text {
     display: flex;
     justify-content: center;
     align-items: flex-start;
 
+    
     img {
         margin-right: 30px;
         transition-duration: 0.3s;
@@ -106,7 +109,7 @@
         margin-left: 75px;
     }
 
-    @media screen and (max-width:1024px) {
+    @media screen and (max-width:1200px) {
         display: none;
     }
 

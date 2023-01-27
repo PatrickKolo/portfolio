@@ -1,6 +1,5 @@
 .footer {
     position: relative;
-    ;
     height: 291px;
     background-color: #141D2F;
     border-top: 4px solid #00BEE8;
@@ -34,30 +33,32 @@
             margin-left: 25px
         }
 
+
         .logo-area {
             display: flex;
             flex-direction: column;
             text-align: center;
 
-            img{
+
+            img {
                 width: 110px;
                 height: 80px;
-
             }
 
             @media screen and (max-width:950px) {
                 margin-bottom: 25px;
             }
 
+
             .footer-impressum {
                 padding-left: 8px;
                 text-decoration: none;
                 color: white;
 
-
                 @media screen and (max-width:950px) {
                     display: none;
                 }
+
 
                 &:hover {
                     text-decoration: underline;
@@ -65,9 +66,8 @@
                     cursor: pointer;
                 }
             }
-
-
         }
+
 
         span {
             font-size: 23px;
@@ -81,30 +81,34 @@
             }
         }
 
+
         .social-area {
             @media screen and (max-width:950px) {
                 margin-bottom: 25px;
             }
         }
 
+
         .social-area img {
             margin-left: 50px;
             cursor: pointer;
 
-            &:hover{
+            &:hover {
                 transform: scale(1.2);
             }
 
             @media screen and (max-width:950px) {
-                margin-left:25px;
+                margin-left: 25px;
                 margin-right: 25px;
             }
         }
+
 
         .mobile {
             display: none;
             text-decoration: none;
             color: white;
+
 
             &:hover {
                 text-decoration: underline;
@@ -112,6 +116,7 @@
                 cursor: pointer;
             }
 
+            
             @media screen and (max-width:950px) {
                 display: flex;
             }

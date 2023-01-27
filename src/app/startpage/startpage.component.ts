@@ -19,6 +19,7 @@ export class StartpageComponent implements OnInit {
     window.open(url, '_blank');
   }
 
+
   public scroll(id: string) {
     if (this.router.url == '/imprint') {
       this.returnToStartpage();
@@ -28,15 +29,18 @@ export class StartpageComponent implements OnInit {
     }
   }
   
+
   setLinksToFalse() {
     this.headerComponent.aboutHeadClicked = false;
     this.headerComponent.skillClicked = false;
     this.headerComponent.portfolioClicked = false;
   }
 
+
   returnToStartpage() {
     window.location.href = 'http://localhost:4200/'
   }
+  
   
   scrollToArea(id:string) {
     const area = document.getElementById(id);

@@ -17,6 +17,7 @@ export class MyskillsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
   public scroll(id: string) {
     if (this.router.url == '/imprint') {
       this.returnToStartpage();
@@ -26,16 +27,19 @@ export class MyskillsComponent implements OnInit {
     }
   }
   
+
   setLinksToFalse() {
     this.headerComponent.aboutHeadClicked = false;
     this.headerComponent.skillClicked = false;
     this.headerComponent.portfolioClicked = false;
   }
 
+
   returnToStartpage() {
     window.location.href = 'http://localhost:4200/'
   }
   
+
   scrollToArea(id:string) {
     const area = document.getElementById(id);
     area?.scrollIntoView({
@@ -43,6 +47,4 @@ export class MyskillsComponent implements OnInit {
       block: "start",
       });
   }
-
-
 }

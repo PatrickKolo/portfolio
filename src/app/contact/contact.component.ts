@@ -20,6 +20,7 @@ export class ContactComponent{
 
   constructor(private formBuilder: FormBuilder) {
 
+
     this.contactForm = this.formBuilder.group( {
       fullname: ['', [Validators.required]],
       email:['', [Validators.required, Validators.email]],
@@ -27,32 +28,31 @@ export class ContactComponent{
     })
    }
 
+
    get fullname() {
     return this.contactForm.get('fullname');
   }
   
+
   get email() {
     return this.contactForm.get('email');
   }
   
+
   get message() {
     return this.contactForm.get('message');
   }
+
 
   sendMail() {
     let nameField = this.nameField.nativeElement[0];
     let emailField = this.emailField.nativeElement[1];
     let massageField = this.massageField.nativeElement[2];
     let buttonField = this.buttonField.nativeElement[3];
-  
     this.disableFields(nameField, emailField, massageField, buttonField);
-    
     this.createMail(nameField, emailField, massageField);
-      
     this.ableFields(nameField, emailField, massageField, buttonField);
-  
     this.contactForm.reset();
-  
     setTimeout(() => {
       this.success = false;
     }, 10000);
@@ -66,6 +66,7 @@ disableFields(nF: any, eF:any, mF:any, bF:any) {
   bF.disabled = true;
 }
 
+
 ableFields(nF:any, eF:any, mF:any, bF:any) {
   nF.disabled = false;
   eF.disabled = false;
@@ -73,22 +74,21 @@ ableFields(nF:any, eF:any, mF:any, bF:any) {
   bF.disabled = false;
 }
 
+
 async createMail(nF: any, eF: any, mF: any) {
   let formData = new FormData();
   formData.append('name', nF.value);
   formData.append('email', eF.value);
   formData.append('message', mF.value);
-
-  await fetch('', 
+  await fetch('https://patrick-kolodziej.developerakademie.net/send_mail/send_mail/send_mail.php', 
   {
     method: 'POST',
     body: formData,
   }
   );
-
   this.success = true;
-
 }
+
 
 public scroll(id: string) {
   const area = document.getElementById(id);
@@ -97,7 +97,4 @@ public scroll(id: string) {
     block: "start",
     });
   }
-  
-
-
 }

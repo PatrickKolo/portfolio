@@ -1,43 +1,40 @@
-<div class="startpage" id="start">
-    <div class="hero-area">
-        <div class="hero-left-container">
-            <div>
-                <img class="hero-pic" src="./assets/img/hero-big.png" alt="">
-            </div>
+<div class="landingpage" id="start">
+    <div class="portrait-area">
+        <div class="left-area">
+            <img class="shadow" src="./assets/img/shadows/hero-shadow.png">
+            <img class="portrait" src="./assets/img/hero-big.png">
         </div>
-        <div class="hero-right-container">
-            <div class="aboutme-title-container">
-                <div class="hero-title-left">
-                    <div class="hero-title-iam">I am</div>
-                </div>
-                <div class="hero-title-right">
-                    <div class="hero-title-name">Patrick Kolodziej</div>
-                    <div class="hero-title-job">FRONTEND DEVELOPER</div>
-                    <div>
-                        <button (click)="scroll('contact')" class="btn-talk">Lets Talk</button>
-                    </div>
+
+        <div class="text-button">
+            <div class="text-container">
+                <p class="vertical i-am">I am </p>
+                <div class="text-container-right">
+                    <p class="name">Patrick Kolodziej</p>
+                    <p class="job">FRONTEND DEVELOPER</p>
                 </div>
             </div>
+            <button mat-raised-button (click)="scroll('contact')">Let`s talk</button>
         </div>
     </div>
+
     <div class="social-media">
         <div class="social-media-left">
             <hr class="line">
-            <img class="m-50" src="./assets/img/icons/sc-icon-github.png">
-            <a class="m-50" href="#contact"><img src="./assets/img/icons/sc-icon-mail.png"></a>
-            <img class="m-50" src="./assets/img/icons/sc-icon-linkedin.png">
+            <img class="m-50" src="./assets/img/icons/sc-icon-github.png"
+                (click)="visit('https://github.com/PatrickKolo')">
+            <a class="m-50" href="#contact"><img
+                    src="./assets/img/icons/sc-icon-mail.png"></a>
+            <img class="m-50" src="./assets/img/icons/sc-icon-linkedin.png"
+                (click)="visit('https://github.com/PatrickKolo')">
             <a class="m-50 mobile-hide" href="#contact">
-                <p [ngStyle]="{'font-size': '23px'}">Patrick.kolodziej@outlook.de</p>
+                <p [ngStyle]="{'font-size': '23px'}">Patrick.Kolodziej@outlook.de</p>
             </a>
         </div>
+
         <div class="social-media-right">
-            <img src="./assets/img/icons/small-arrow.png">
-            <p [ngStyle]="{'font-size': '23px'}" class="vertical">Scroll down</p>
+            <img src="./assets/img/icons/arrow-down.png">
+            <p [ngStyle]="{'font-size': '23px'}" class="vertical" (click)="scroll('aboutme')">Scroll down</p>
         </div>
     </div>
-    <img class="aboutme-slope" src="./assets/img/aboutme-bg-slope.png" alt="">
-</div>
-
-<div class="shadow-container">
-    <img class="purple-shadow" src="./assets/img/shadows/hero-shadow.png">
+    <img class="vector" src="./assets/img/slope2.png">
 </div>

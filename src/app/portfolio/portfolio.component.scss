@@ -6,11 +6,13 @@
     font-family: 'Poppins';
     font-style: normal;
     text-align: center;
+    z-index: 1;
 
 
     @media screen and (max-width:550px) {
         justify-content: space-between;
     }
+
 
     span {
         font-weight: 700;
@@ -46,6 +48,7 @@
         }
     }
 
+
     .line {
         border: 2px solid #4B47FF;
         height: 1px;
@@ -53,8 +56,14 @@
         border-radius: 10px;
     }
 
+
     .long {
         width: 33%;
+        margin-left: 10px;
+
+        @media screen and (max-width:1200px) {
+            margin-left: 40px;
+        }
 
         @media screen and (max-width:1050px) {
             width: 30%;
@@ -65,7 +74,7 @@
         }
 
         @media screen and (max-width:780px) {
-            width: 20%;
+            display: none;
         }
 
         @media screen and (max-width:640px) {
@@ -77,10 +86,13 @@
         }
     }
 
+
     .short {
         width: 10%;
+        margin-right: 10px;
     }
 }
+
 
 .portfolio-title-text {
     position: relative;
@@ -96,6 +108,7 @@
         margin-right: 35px;
     }
 }
+
 
 .project-area {
     position: relative;
@@ -123,20 +136,20 @@
     }
 }
 
+
 .project {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 
-
     @media screen and (max-width:1024px) {
         flex-direction: column;
     }
 
-    img {
-        width: 35vw; //500px;
 
+    img {
+        width: 35vw;
 
         @media screen and (max-width:1024px) {
             width: 45vw;
@@ -155,6 +168,7 @@
             width: 50%
         }
     }
+
 
     .column-reverse {
         display: flex;
@@ -178,7 +192,7 @@
 
 
 .project-details {
-    width: 30vw; //30%;
+    width: 30vw;
     display: flex;
     flex-direction: column;
 
@@ -190,8 +204,17 @@
     }
 
     @media screen and (max-width:900px) {
-        width: 60vw;
+        width: 65vw;
     }
+
+    @media screen and (max-width:600px) {
+        width: 70vw;
+    }
+
+    @media screen and (max-width:500px) {
+        width: 75vw;
+    }
+
 
     @media screen and (max-width:400px) and (orientation: portrait) {
         width: 83vw;
@@ -209,12 +232,11 @@
             padding: 8px 15px;
             color: white !important;
             border-radius: 10px !important;
-           // border-inline: none;
+            // border-inline: none;
         }
     }
-
-
 }
+
 
 .description-reverse {
     margin-bottom: 20px;
@@ -227,10 +249,10 @@
     }
 }
 
+
 .btn {
     cursor: pointer;
     font-size: 23px;
-    //width: calc((100% - 50px)/2);
     height: 58px;
     gap: 10px;
     padding: 10px 30px;
@@ -245,15 +267,18 @@
     }
 }
 
+
 .live {
     background-color: #4B47FF !important;
 }
+
 
 .git {
     margin-left: 50px;
     background-color: transparent !important;
     border: 1px solid #00BEE8;
 }
+
 
 .purple-shadow-container {
     position: absolute;
@@ -277,13 +302,14 @@
     @media screen and (max-width: 768px) and (max-height: 768px) {
         top: 3400px;
     }
-
 }
+
 
 .purple-shadow {
     position: relative;
     left: -100px;
     overflow: hidden;
+    z-index: 0;
 
     @media screen and (max-width:1000px) {
         left: -400px;
@@ -293,6 +319,7 @@
         left: -600px;
     }
 }
+
 
 .green-shadow-container {
     position: absolute;
@@ -305,6 +332,7 @@
         width: 100%;
     }
 }
+
 
 .green-shadow {
     position: relative;

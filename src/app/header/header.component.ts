@@ -32,12 +32,14 @@ setUnderline(id:string) {
   }
 }
 
+
 setAboutToTrue() {
   this.aboutHeadClicked = true;
   this.skillClicked = false;
   this.portfolioClicked = false;
   this.contactClicked = false;
 }
+
 
 setSkillToTrue() {
   this.aboutHeadClicked = false;
@@ -46,12 +48,14 @@ setSkillToTrue() {
   this.contactClicked = false;
 }
 
+
 setPortfolioToTrue() {
   this.aboutHeadClicked = false;
   this.skillClicked = false;
   this.portfolioClicked = true;
   this.contactClicked = false;
 }
+
 
 setContactToTrue() {
   this.aboutHeadClicked = false;
@@ -60,12 +64,14 @@ setContactToTrue() {
   this.contactClicked = true;
 }
 
+
 setLinksToFalse() {
   this.aboutHeadClicked = false;
   this.skillClicked = false;
   this.portfolioClicked = false;
   this.contactClicked = false;
 }
+
 
 public scroll(id: string) {
   if (this.router.url == '/imprint') {
@@ -76,9 +82,11 @@ public scroll(id: string) {
   }
 }
 
+
 returnToStartpage() {
   window.location.href = 'http://localhost:4200/'
 }
+
 
 scrollToArea(id:string) {
   const area = document.getElementById(id);
@@ -89,12 +97,15 @@ scrollToArea(id:string) {
       });
 }
 
+
 openDialog() {
   this.dialogClosed = false;
 }
 
+
 closeDialog() {
   this.dialogClosed = true;
 }
+
 
 }
