@@ -27,13 +27,13 @@
     <div class="head-display" id="display" *ngIf="!dialogClosed">
         <div class="display-logo">
             <a href="#"><img class="logo" src="./assets/img/logo-pk2.png" (click)="setLinksToFalse()"></a>
-            <img class="menu" src="./assets/img/icons/burger-close.png" (click)="closeDialog()">
+            <img class="menu" style="cursor: pointer;" src="./assets/img/icons/burger-close.png" (click)="closeDialog()">
         </div>
 
         <div class="display-link">
             <div>
                 <a [ngClass]="{'green': aboutHeadClicked}" (click)="scroll('aboutme')"
-                    (click)="(setUnderline('about-head'))">
+                    (click)="(setUnderline('about-head'))" (click)="dialogClosed = true;">
                     About me
                 </a>
                 <div [ngClass]="{'underline': aboutHeadClicked}"></div>
@@ -41,7 +41,7 @@
 
             <div>
                 <a [ngClass]="{'green': skillClicked}" (click)="scroll('skills')"
-                    (click)="(setUnderline('skill-head'))">
+                    (click)="(setUnderline('skill-head'))" (click)="dialogClosed = true;">
                     Skills
                 </a>
                 <div [ngClass]="{'underline': skillClicked}"></div>
@@ -49,7 +49,7 @@
 
             <div>
                 <a [ngClass]="{'green': portfolioClicked}" (click)="scroll('portfolio')"
-                    (click)="(setUnderline('pf-head'))">
+                    (click)="(setUnderline('pf-head'))" (click)="dialogClosed = true;">
                     Portfolio
                 </a>
                 <div [ngClass]="{'underline': portfolioClicked}"></div>
@@ -57,7 +57,7 @@
 
             <div>
                 <a [ngClass]="{'green': contactClicked}" (click)="scroll('contact')"
-                    (click)="(setUnderline('contact-head'))">
+                    (click)="(setUnderline('contact-head'))" (click)="dialogClosed = true;">
                     Contact
                 </a>
                 <div [ngClass]="{'underline': contactClicked}"></div>

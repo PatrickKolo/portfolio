@@ -45,8 +45,8 @@
     margin-left: 200px;
 
     @media screen and (max-width:720px) {
-        margin-right: 35px;
-        margin-left: 35px
+        margin-right: 32px;
+        margin-left: 32px;
     }
 
     @media screen and (max-width: 914px) and (max-height: 768px) {
@@ -62,9 +62,11 @@
 
     .menu {
         display: none;
+        cursor: pointer;
 
         @media screen and (max-width:768px) {
             display: flex;
+            cursor: pointer;
         }
 
         @media screen and (max-width: 768px) and (max-height: 768px) {
@@ -93,9 +95,9 @@
 
 
 .underline {
-    border: 1px solid #9747FF;
+    border: 1px solid #4B47FF ;
     height: 1px;
-    background-color: #9747FF;
+    background-color: #4B47FF ;
     border-radius: 10px;
     width: 50px
 }
@@ -116,8 +118,11 @@
     background-color: #141d2fd5;
     display: flex;
     flex-direction: column;
-    animation: fadeIn 0.5s;
-
+    opacity: 1;
+    animation: fadeInAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
 
     .display-logo {
         display: flex;
@@ -152,6 +157,8 @@
         text-align: center;
         flex-direction: column;
         margin-top: 150px;
+       // animation: fadeIn 0.5s ease-in-out;
+
 
 
         div {
@@ -166,13 +173,13 @@
 }
 
 
-@keyframes fadeIn {
-    from {
-        width: 0vw;
+@keyframes fadeInAnimation  {
+    0% {
+        opacity: 0;
     }
+    100% {
+        opacity: 1;
+     }
 
-    to {
-        width: 100vw;
-    }
 
 }
