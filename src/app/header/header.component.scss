@@ -44,6 +44,11 @@
     margin-right: 200px;
     margin-left: 200px;
 
+    @media screen and (max-width:900px) {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
     @media screen and (max-width:720px) {
         margin-right: 32px;
         margin-left: 32px;

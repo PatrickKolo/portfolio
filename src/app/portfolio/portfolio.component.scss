@@ -13,7 +13,6 @@
         justify-content: space-between;
     }
 
-
     span {
         font-weight: 700;
         font-size: 90px;
@@ -37,6 +36,7 @@
 
         @media screen and (max-width:550px) {
             width: unset;
+            font-size: 75px;
         }
 
         @media screen and (max-width:400px) {
@@ -46,6 +46,10 @@
 
         @media screen and (max-width:350px) {
             font-size: 50px;
+        }
+
+        @media screen and (max-width:300px) {
+            font-size: 45px;
         }
     }
 
